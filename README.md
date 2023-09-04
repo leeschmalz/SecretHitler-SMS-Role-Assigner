@@ -33,7 +33,7 @@ These two simple features allow the game to be played seamlessly without using t
 3. each player text "add (their name)" to your twilio phone number. All information will be passed to and from players with this phone number.
 4. after all players are added, anyone text "start game"
 ## At the start of each round:
-1. at the beginning of each round, anyone text "assign". new roles will be generated and texted to everyone
+1. at the beginning of each round, anyone text "assign". new roles will be generated and texted to everyone.
 2. to enact the Investigate Party Membership president power, the president simply texts "View Charlie".
 3. at any point if you need to change the player configuration, anyone can text "end game" to restart from "at the beginning of each session".
 
