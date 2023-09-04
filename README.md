@@ -8,7 +8,7 @@ After initial configuration, the service will allow any player to simply text th
 - Your role is liberal.
 - Your role is fascist. Fascists are: (Alice is fascist) (Bob is hitler)
 
-The service also provides functionality for the President power that allows the president to look at any players party membership. At this point in the game, the president will simply send "View Charlie" and will receive a text message in return "Charlie's party is liberal". Everyone else in the game will receive a text "Charlie's party membership was viewed." to ensure players cannot secretly view each others cards.
+The service also provides functionality for the _Investigate Party Membership_ President power where the president can look at any players party membership. At this point in the game, the president will simply send "View Charlie" and will receive a text message in return "Charlie's party is liberal". Everyone else in the game will receive a text "Charlie's party membership was viewed." to ensure players cannot secretly view each others cards.
 
 These two simple features allow the game to be played seamlessly without using the brown envelopes at all, and forgoing the eye closing ritual at the beginning of each round.
 
