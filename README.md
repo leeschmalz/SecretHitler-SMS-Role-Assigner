@@ -4,11 +4,11 @@ An SMS service that can be used to privately assign roles to players via text me
 1. The eye closing and opening process gets quite tedious and annoying when playing many rounds.
 2. The brown envelopes are made out of paper and inevitably get creased or wet in memorable ways, making it harder to keep roles a secret, and often requiring players to hide the envelope itself.
 
-After initial configuration, the service will allow any player to simply text the word 'assign' and all players will receive a text message with the information they should know before the game begins. For example:
-- Your role is liberal.
-- Your role is fascist. Fascists are: (Alice is fascist) (Bob is hitler)
+After initial configuration, the service will allow any player to simply text the word `assign` and all players will receive a text message with the information they should know before the game begins. For example:
+- `Your role is liberal.`
+- `Your role is fascist. Fascists are: (Alice is fascist) (Bob is hitler)`
 
-The service also provides functionality for the _Investigate Party Membership_ President power where the president can look at any players party membership. At this point in the game, the president will simply send "View Charlie" and will receive a text message in return "Charlie's party is liberal". Everyone else in the game will receive a text "Charlie's party membership was viewed." to ensure players cannot secretly view each others cards.
+The service also provides functionality for the **_Investigate Party Membership_** President power where the president can look at any players party membership. At this point in the game, the president will simply send `View Charlie` and will receive a text message in return `Charlie's party is liberal`. Everyone else in the game will receive a text `Charlie's party membership was viewed.` to ensure players cannot secretly view each others cards.
 
 These two simple features allow the game to be played seamlessly without using the brown envelopes at all, and forgoing the eye closing ritual at the beginning of each round.
 
@@ -27,21 +27,22 @@ These two simple features allow the game to be played seamlessly without using t
     pip install python-dotenv
     ```
 
-## At the start of each session:
+## Each session:
 1. run python main.py. Leave it running for the whole session (or serve it elsewhere to run continuously).
 2. anyone text "hello" to your twilio phone number
 3. each player text "add (their name)" to your twilio phone number. All information will be passed to and from players with this phone number.
 4. after all players are added, anyone text "start game"
-## At the start of each round:
-1. at the beginning of each round, anyone text "assign". new roles will be generated and texted to everyone.
-2. to enact the Investigate Party Membership president power, the president simply texts "View Charlie".
-3. at any point if you need to change the player configuration, anyone can text "end game" to restart from "at the beginning of each session".
+   
+## Each round:
+1. anyone text `assign`. new roles will be generated and texted to everyone.
+2. to enact the **_Investigate Party Membership_** president power, the president simply texts `View Charlie`.
+3. at any point if you need to change the player configuration, anyone can text `end game` to restart from _**Each session**_.
 
 ## Summary of Commands:
 all commands are case insensitive.
-- `hello`: start listening to add players
-- `add Alice`: add player called Alice
-- `start game`: done assigning players
-- `assign`: get new roles
-- `view Eve`: view Eve's party membership. Notifies other players that Eve's membership was viewed.
-- `end game`: set state to inactive
+- `hello`: start listening to add players. state: 'inactive' -> 'adding players'
+- `add Alice`: add player called Alice.
+- `start game`: done adding players. state: 'add players' -> 'active'
+- `assign`: get new roles to start a new round.
+- `view Eve`: view Eve's party membership. notifies other players that Eve's membership was viewed.
+- `end game`: restart with new players. does not need to be performed between rounds. state: any -> 'inactive'
