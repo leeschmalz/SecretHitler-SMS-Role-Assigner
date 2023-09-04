@@ -46,12 +46,6 @@ def assign_and_notify_roles(players):
 
     return zip(players.keys(), roles)
 
-def get_role_by_player_name(target_player, zipped_data):
-    for player, role in zipped_data:
-        if player == target_player:
-            return role
-    return "Player not found"
-
 def send_sms(to, body):
     client.messages.create(
         body=body,
@@ -62,7 +56,7 @@ def send_sms(to, body):
 def clear_all_messages():
     messages = client.messages.list(
         to=phone_number,
-        limit=50  # Adjust limit as needed
+        limit=50
     )
     for message in messages:
         message.delete()
