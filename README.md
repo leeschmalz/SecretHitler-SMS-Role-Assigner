@@ -38,6 +38,7 @@ These two simple features allow the game to be played seamlessly without using t
 3. at any point if you need to change the player configuration, anyone can text "end game" to restart from "at the beginning of each session".
 
 ## Summary of Commands:
+all commands are case insensitive.
 - `hello`: start listening to add players
 - `add Alice`: add player called Alice
 - `start game`: done assigning players
