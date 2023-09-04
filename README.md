@@ -35,7 +35,7 @@ These two simple features allow the game to be played seamlessly without using t
    
 ## Each round:
 1. anyone text `assign`. new roles will be generated and texted to everyone.
-2. to enact the **_Investigate Party Membership_** president power, the president simply texts `View Charlie`.
+2. to enact the **_Investigate Party Membership_** president power, the president simply texts `View Bob`.
 3. at any point if you need to change the player configuration, anyone can text `end game` to restart from _**Each session**_.
 
 ## Summary of Commands:
