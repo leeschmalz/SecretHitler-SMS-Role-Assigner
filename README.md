@@ -45,4 +45,4 @@ all commands are case insensitive.
 - `start game`: done adding players. state: 'add players' -> 'active'
 - `assign`: get new roles to start a new round.
 - `view Eve`: view Eve's party membership. notifies other players that Eve's membership was viewed.
-- `end game`: restart with new players. does not need to be performed between rounds. state: any -> 'inactive'
+- `end game`: end the current sesssion to restart with new players. state: any -> 'inactive'
