@@ -30,7 +30,7 @@ These two simple features allow the game to be played seamlessly without using t
 ## At the start of each session:
 1. run python main.py. Leave it running for the whole session (or serve it elsewhere to run continuously).
 2. anyone text "hello" to your twilio phone number
-3. each player text "add (their name)" to your twilio phone number. All communications will be delivered to and from players with this phone number.
+3. each player text "add (their name)" to your twilio phone number. All information will be passed to and from players with this phone number.
 4. after all players are added, anyone text "start game"
 ## At the start of each round:
 1. at the beginning of each round, anyone text "assign". new roles will be generated and texted to everyone
