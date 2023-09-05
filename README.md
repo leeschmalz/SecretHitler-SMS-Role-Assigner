@@ -2,7 +2,7 @@
 
 An SMS service that can be used to privately assign roles to players via text message while playing the popular board game [Secret Hitler](https://www.secrethitler.com/). The game is typically played by passing out brown envelopes with cards inside that describe the hidden identity of each player. Every player then looks at their role privately, all players close their eyes, and someone will then instruct the Fascist players to open their eyes or raise their hand to share the necessary pre-game information. This project solves two slight inconveniences with this process:
 1. The eye closing and opening process gets quite tedious and annoying when playing many rounds.
-2. The brown envelopes are made out of paper and inevitably get creased or wet in memorable ways, making it harder to keep roles a secret, and often requiring players to hide the envelope itself.
+2. The brown envelopes are made out of paper and inevitably get creased or wet in memorable ways, making it harder to keep roles a secret, and often requiring players to hide their envelope.
 
 After initial configuration, the service will allow any player to simply text the word `assign` and all players will receive a text message with the information they should know before the game begins. For example:
 - `Your role is liberal.`
