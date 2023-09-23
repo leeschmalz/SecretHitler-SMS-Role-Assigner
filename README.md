@@ -10,7 +10,7 @@ After initial configuration, the service will allow any player to simply text th
 
 The service also provides functionality for the **_Investigate Party Membership_** president power where the president can look at any player's party membership card. At this point in the game, the president will, for example, send `View Charlie`, and will receive a text message in return `Charlie's party is liberal`. Everyone else in the game will receive a text `Charlie's party membership was viewed.` to ensure players cannot secretly view each others' identities.
 
-These two simple features allow the game to be played seamlessly without using the brown envelopes at all, forgoing the eye closing ritual at the beginning of each round.
+These two simple features allow the game to be played seamlessly without using the brown envelopes at all, and forgoing the eye closing ritual at the beginning of each round.
 
 ## Perform the following once to get started:
 1. Create a free account and phone number with Twilio.
