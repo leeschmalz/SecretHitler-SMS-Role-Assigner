@@ -14,7 +14,7 @@ These two simple features allow the game to be played seamlessly without using t
 
 ## Perform the following once to get started:
 1. Create a free account and phone number with Twilio.
-2. Put your Twilio phone number SID, and Auth Token in a `.env` file to be accessed as follows (or just paste it into the code if you're keeping it locally):
+2. Put your Twilio phone number, SID, and Auth Token in a `.env` file to be accessed as follows (or just paste it into the code if you're keeping it locally):
     ```python
     phone_number = os.environ.get("TWILIO_PHONE_NUM")
     account_sid = os.environ.get("TWILIO_SID")
