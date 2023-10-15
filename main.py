@@ -1,6 +1,7 @@
 from sms import *
 from roles import get_role_by_player_name
 import time
+import random
 
 # COMMANDS
 # hello: start listening to add players
@@ -26,8 +27,8 @@ while True:
                 if role_to_send == 'hitler':
                     role_to_send = 'fascist'
                 send_sms(sender, f"{name}'s party is {role_to_send}")
-                for player in players.keys():
-                    send_sms(players[player], f"{name}'s role was viewed.")
+                random_player = random.choice(list(players.keys()))
+                send_sms(players[random_player], f"{name}'s role was viewed.")
 
             if content == 'end game':
                 players = {}
