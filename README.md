@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/862e86e5-15c4-45c8-a94f-599c6632ed29" alt="image">
+</p>
+
 # SecretHitler-SMS-Role-Assigner
 
 An SMS service that can be used to privately assign roles to players via text message while playing the popular board game [Secret Hitler](https://www.secrethitler.com/). The game is typically played by passing out brown envelopes with cards inside that describe the hidden identity of each player. The players then look at their roles privately, all players close their eyes, and someone instructs the Fascist players to open their eyes or raise their hand to share the necessary pre-game information. This project solves two slight inconveniences with the standard role assignment process:
